@@ -35,3 +35,10 @@ It's a simple website with different sections, including a header, home section,
 > The user can enter their first name, last name, phone number, email, country, the apartment they are interested in, and any comments/questions.
 > There is a "Submit" button to submit the contact form.
 
+![image](https://github.com/Shreyav23Singh/Appartmentwebsite/assets/66567410/ff090c6f-9446-4c10-bdb9-793cccba3072)
+![image](https://github.com/Shreyav23Singh/Appartmentwebsite/assets/66567410/5463557c-9c7e-42de-8794-98b39243c30b)
+![image](https://github.com/Shreyav23Singh/Appartmentwebsite/assets/66567410/c7137f13-16b1-417e-a166-ef59e0d3fbea)
+![image](https://github.com/Shreyav23Singh/Appartmentwebsite/assets/66567410/40dd1d41-01a1-4f20-98b5-ab7aeb0d3e4a)
+
+
+
