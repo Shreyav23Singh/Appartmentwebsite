@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+SA+Beginner&display=swap");
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(174, 187, 249, 0.1);
+}
+* {
+  font-family: "Edu SA Beginner", cursive;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+  
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #181717;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+}
+
+header .logo {
+  color: var(--black);
+  font-size: 2.8rem;
+  font-weight: bolder;
+  color: rgb(252, 85, 202);
+}
+
+header .navbar a {
+  font-size: 1.7rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  color: white;
+  background-color: rgb(123, 143, 243);
+  font-weight: bolder;
+}
+
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.9rem;
+  color: rgb(13, 1, 1);
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+  color: #fff;
+  background-color: rgb(252, 85, 202);
+  transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+/* Media queries to make responsive  */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+  section{
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid lightblue;
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: block;
+    font-size: 2rem;
+    background: rgb(123, 143, 243);
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* CSS for Home starts */
+section {
+  padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+  background:white;
+}
+
+.home .appartment-list .slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 9rem;
+}
+.home .home-slider .slide .content {
+  flex: 1 1 45rem;
+}
+.home .appartment-list .slide .image {
+  flex: 1 1 45rem;
+}
+.home .appartment-list .slide .image .img1 {
+  width: 100%;
+}
+/* .home .appartment-list .slide .image .img2 {
+  width: 100%;
+  height: 1500%;
+}
+.home .appartment-list .slide .image .img3 {
+  width: 100%;
+}
+
+.home .appartment-list .slide .image .img4 {
+  width: 100%;
+}
+.home .appartment-list .slide .image .img5 {
+  width: 100%;
+}
+.home .appartment-list .slide .image .img6 {
+  width: 100%;
+  height: 50%;
+} */
+.home .appartment-list .slide .content span {
+  color: blue;
+  font-family: "Bungee Spice", cursive;
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.home .appartment-list .slide .content h3 {
+  font-size: 25px;
+  color: var(--black);
+}
+.home .appartment-list .slide .content p {
+  font-size: 25px;
+  color: var(--light-color);
+  line-height: 1.5;
+}
+
+.button{
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 2rem;
+  color: #eee;
+  background: linear-gradient(to right , rgb(243, 76, 243) , rgb(74, 74, 244));
+  cursor: pointer;
+  border-radius: .5rem;
+  padding: .8rem 3rem;
+  font-weight: bold;
+  font-style: normal;
+}
+.button:hover{
+  background:linear-gradient(to right , rgb(245, 76, 76) , rgb(1, 1, 15)); 
+  color: white;
+  letter-spacing: .2rem;
+}
+
+.button1{
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 2rem;
+  color: #eee;
+  background: linear-gradient(to right , rgb(243, 76, 243) , rgb(74, 74, 244));
+  cursor: pointer;
+  border-radius: .5rem;
+  padding: .8rem 3rem;
+  font-weight: bold;
+  font-style: normal;
+  margin-left: 2rem;
+}
+.button1:hover{
+  background:linear-gradient(to right , rgb(84, 245, 76) , rgb(1, 1, 15)); 
+  color: white;
+  letter-spacing: .2rem;
+}
+
+
+.swiper-pagination-bullet-active{
+  background: var(--green);
+  
+    
+}
+
+
+/* CSS for facilities here */
+
+section {
+  padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+  background: white;
+}
+
+.home .fascility-list .slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 9rem;
+}
+.home .fascility-list .slide .content1 {
+  flex: 1 1 45rem;
+}
+.home .fascility-list .slide .image {
+  flex: 1 1 45rem;
+}
+.home .fascility-list .slide .image .img {
+  width: 100%;
+}
+
+.home .fascility-list .slide .content1 span {
+  color: Red;
+  font-family: "Bungee Spice", cursive;
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.home .fascility-list .slide .content1 h3 {
+  font-size: 25px;
+  color: var(--black);
+}
+.home .fascility-list .slide .content1 p {
+  font-size: 25px;
+  color: var(--light-color);
+  line-height: 1.5;
+}
+
+.buttonn{
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 2rem;
+  color: #262525;
+  background: linear-gradient(to right , rgb(6, 234, 250) , rgb(201, 252, 183)); 
+  cursor: pointer;
+  border-radius: .5rem;
+  padding: .8rem 3rem;
+  font-weight: bold;
+  font-style: normal;
+}
+.buttonn:hover{
+  background:linear-gradient(to right , rgb(245, 6, 6) , rgb(69, 71, 69));
+  color: white;
+  letter-spacing: .2rem;
+}
+
+
+
+
+.swiper-pagination-bullet-active{
+  background: rgb(54, 243, 54);
+  margin-top: 30px;
+  padding-bottom: 10px;
+  justify-content: space-around;
+  
+    
+}
+.head{
+  text-align:center ;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--black);
+color: rgb(6, 37, 95);
+
+
+}
+
+.head1{
+  text-align:center ;
+  font-size: 20px;
+ 
+  color: var(--green);
+  font-weight: 900;
+  margin: 0 auto;
+  font-family: "Bungee Spice", cursive;
+  font-family: "Edu SA Beginner", cursive;
+
+  
+  
+
+}
+
+/* Contact form css starts */
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.headingg{
+  text-align:center ;
+  font-size: 60px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: Black;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  
+  
+}
+
+.mb-3{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-align: center;
+}
+
+input[type="string"],
+        input[type="number"],
+        input[type="email"],
+        textarea {
+            width: 1500px; 
+            color: black;
+        }
+        .dropdown .button {
+          width: 250px; 
+      }
+      
+      .form-control{
+        width: 100%;
+        max-width: 300px; 
+        padding: 8px 12px;
+        margin-top: 1px;
+        
+      }
+      .dropdown .form-label{
+        font-size: 20px;
+ 
+  color: black;
+  text-align: center;
+      }
+      .sub{
+        background: linear-gradient(to right, rgb(254, 88, 171) ,rgb(92, 87, 87));
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 30px;
+      }
+      .sub:hover{
+        letter-spacing: .2rem;
+        background: linear-gradient(to right, rgb(138, 84, 232) ,rgb(92, 87, 87));
+        font-weight: bolder;
+        font-size: 25px;
+      }
+
+      .drop{
+        background-color:gainsboro; /* Green */
+        border: none;
+        color: black;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+       
+        width: 70%;
+        margin-left: 30px;
+      }
+
+      .dropdown-item{
+        font-size: 20px;
+      }
+
+      /* Booking */
+
+   
+      
+      
+     
+      h1, h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bolder;
+        
+      }
+      
+      #bookingForm {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      
+      #bookingDetails {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 10px;
+      }
+      
+      #bookingTable {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      #bookingTable th, #bookingTable td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+      }
+
+      .booking-form{
+        font-size: 35px;
+      }
+      .booking-det{
+        font-size: 20px;
+        background: lightblue;
+
+      }
+
+      .bd-head{
+        font-size: 40px;
+        color: crimson;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      .bf-head{
+        font-size: 40px;
+        color: rgb(52, 28, 233);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      
+      .bf-button{
+        width: 50%;
+        padding: 2% 4%;
+        font-size: 16px;
+        font-weight: bolder;
+        color: #fff;
+        background: linear-gradient(to right , yellow , red);
+        border-radius:8px;
+      }
+      .bf-button:hover{
+        background: linear-gradient(to right , rgb(95, 200, 241) , rgb(67, 62, 62));
+        text-align: center;
+      }
+    
